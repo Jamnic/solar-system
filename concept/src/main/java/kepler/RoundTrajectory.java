@@ -27,6 +27,8 @@ public class RoundTrajectory extends Trajectory {
 		double radianAngle = 180 / Math.PI;
 		
 		double velocityAngle = radianAngle * velocity.doubleValue() / radius.doubleValue();
+		
+		System.out.println("Velocity angle = " + velocityAngle);
 
 		y = radius.multiply(BigDecimal.valueOf(Math.cos(velocityAngle * time + angleBetween)));
 		x = radius.multiply(BigDecimal.valueOf(-Math.sin(velocityAngle * time + angleBetween)));

@@ -23,14 +23,13 @@ public class SolarSystem {
 		Planet earth = createEarth();
 		solarSystem.getCelestialObjects().add(earth);
 
-		Planet jupiter = createJupiter();
-		solarSystem.getCelestialObjects().add(jupiter);
+//		Planet jupiter = createJupiter();
+//		solarSystem.getCelestialObjects().add(jupiter);
 
 		CelestialObjectManager manager = new CelestialObjectManager();
 		manager.performTrajectory(earth, 1000);
 		manager.performTrajectory(earth, 1000);
 		manager.performTrajectory(earth, 1000);
-		
 		
 	}
 
